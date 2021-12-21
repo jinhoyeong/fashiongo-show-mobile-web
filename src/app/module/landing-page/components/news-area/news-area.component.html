@@ -1,0 +1,23 @@
+<div class="news-area" [class]="mt">
+	<p class="landing-h2">FashionGo Week In The News</p>
+	<swiper class="news-swiper" [config]="config" (swiper)="onSwiper($event)">
+
+		<ng-template swiperSlide *ngFor="let item of news">
+			<div class="news-block">
+				<p class="news-ss">
+					<img [src]="item.newsSrc" alt="">
+					<span class="news-logo">
+						<img [src]="item.logoSrc" alt="">
+					</span>
+				</p>
+				<p class="news-txt">
+					{{ item.txt }}
+				</p>
+				<div class="news-info">
+					<p class="news-date">{{ item.date }}</p>
+					<a target="_blank" [href]="item.link" class="btn-news-detail">Detail</a>
+				</div>
+			</div>
+		</ng-template>
+	</swiper>
+</div>

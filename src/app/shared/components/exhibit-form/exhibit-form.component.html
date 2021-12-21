@@ -1,0 +1,14 @@
+<ng-contanier [formGroup]="exhibitForm">
+	<p class="input-ttl mt-24">Email</p>
+	<input class="input-cmn mt-8" type="text" placeholder="example@email.com" formControlName="email">
+	<p class="input-attention mt-4" *ngIf="guideText">*{{ guideText }}</p>
+
+	<p class="input-ttl mt-24">Name</p>
+	<input class="input-cmn mt-8" type="text" placeholder="Name" formControlName="name">
+
+	<p class="input-ttl mt-24">Company</p>
+	<input class="input-cmn mt-8" type="text" placeholder="Company Name" formControlName="companyName">
+
+	<p class="input-ttl mt-24">Contact Number</p>
+	<input class="input-cmn mt-8" type="text" placeholder="123 456 7890" formControlName="contactNumber">
+</ng-contanier>

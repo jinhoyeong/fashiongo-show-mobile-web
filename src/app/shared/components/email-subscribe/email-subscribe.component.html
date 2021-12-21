@@ -1,0 +1,12 @@
+<div class="email-subscribe">
+	<p class="email-subscribe-txt">Join our mailing list to stay up to date</p>
+	<div class="subscribe-input">
+		<input type="text" placeholder="example@email.com" [formControl]="email">
+		<button class="btn_subscribe" (click)="onBtnClick()">Subscribe</button>
+	</div>
+	<div class="base-checkbox">
+		<input id="cb-1" type="checkbox" [(ngModel)]="checked">
+		<label class="txt" for="cb-1">Do not show for 3 days</label>
+	</div>
+	<a class="close-subscribe" (click)="onClose()"></a>
+</div>

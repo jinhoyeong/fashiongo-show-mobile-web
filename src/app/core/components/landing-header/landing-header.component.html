@@ -1,0 +1,14 @@
+<div class="header-con">
+	<p class="logo" (click)="onLogoClick()"></p>
+
+	<ng-template [ngIf]="!userAccount">
+		<p class="sign-in"><a href="#">Sign in</a></p>
+	</ng-template>
+
+	<ng-template [ngIf]="userAccount">
+		<div class="avatar-img">
+			<img src="./assets/img/img_avatar.svg" alt="">
+			<div class="sign-out" *ngIf="showSignOut"><a href="#">Sign Out</a></div>
+		</div>
+	</ng-template>
+</div>

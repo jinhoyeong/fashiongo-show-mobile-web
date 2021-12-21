@@ -1,0 +1,20 @@
+<main-visual></main-visual>
+<guide-area></guide-area>
+
+<ng-template [ngIf]="!isEnd">
+	<experience-area></experience-area>
+	<why-area></why-area>
+	<brand-area></brand-area>
+	<news-area></news-area>
+</ng-template>
+
+<ng-template [ngIf]="isEnd">
+	<why-area [mt]="'mt-40'"></why-area>
+	<brand-area></brand-area>
+	<experience-area></experience-area>
+	<news-area [mt]="'mt--40'"></news-area>
+</ng-template>
+
+<event-area></event-area>
+<footer-r01></footer-r01>
+<email-subscribe *ngIf="isEmailSubscribe"></email-subscribe>

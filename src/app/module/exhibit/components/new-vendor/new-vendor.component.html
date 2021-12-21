@@ -1,0 +1,25 @@
+<div class="main-cmn">
+	<p class="ttl-cmn">Let’s get in touch!</p>
+	<p class="pop-txt-cmn mt-16">Please leave your contact information below and our dedicated account executive will
+		contact you soon.</p>
+	<p class="pop-txt-cmn mt-16">For any immediate questions or inquiries, please email
+		<br><span>exhibit@fgevents.com</span></p>
+
+	<!-- <p class="input-ttl mt-24">Email</p>
+	<input class="input-cmn mt-8" type="text" placeholder="example@email.com">
+	<p class="input-attention mt-4">*You must enter your email to begin</p>
+
+	<p class="input-ttl mt-24">Name</p>
+	<input class="input-cmn mt-8" type="text" placeholder="Name">
+
+	<p class="input-ttl mt-24">Company</p>
+	<input class="input-cmn mt-8" type="text" placeholder="Company Name">
+
+	<p class="input-ttl mt-24">Contact Number</p>
+	<input class="input-cmn mt-8" type="text" placeholder="123 456 7890"> -->
+
+	<exhibit-form [guideText]="'You must enter your email to begin'" (outputValues)="sendValues($event)">
+	</exhibit-form>
+
+	<button id="submit-form" class="btn-cmn mt-24" (click)="onSubmit()">Submit</button>
+</div>

@@ -1,0 +1,17 @@
+<div class="main-visual">
+	<div class="absolute-con">
+		<h1><img src="./assets/img/ttl_logo.svg" alt=""></h1>
+		<p class="event-period"><img src="./assets/img/img_fgweek_period.svg" alt=""></p>
+		<ul class="main-visual-con">
+
+			<li btn-visual [dt]="'Attend'" [dd]="'Discover, experience, and shop the best brands'" [btnLabel]="'Register Now'"
+				(outputClick)="sendRegisterNow()">
+			</li>
+
+			<li btn-visual [dt]="'Exhibit'" [dd]="'Connect, build, and grow your business'" [btnLabel]="'Apply Now'"
+				(outputClick)="sendApplyNow()">
+			</li>
+
+		</ul>
+	</div>
+</div>
